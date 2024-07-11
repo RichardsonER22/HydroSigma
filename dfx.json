@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "HydroSigma_backend": {
+      "main": "src/HydroSigma_backend/main.mo",
+      "type": "motoko"
+    },
+    "HydroSigma_frontend": {
+      "dependencies": [
+        "HydroSigma_backend"
+      ],
+      "source": [
+        "src/HydroSigma_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "HydroSigma_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
